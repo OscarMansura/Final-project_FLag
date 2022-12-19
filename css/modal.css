@@ -1,0 +1,59 @@
+/* modal background */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  /* modal content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 90%;
+    border-radius: 10px;
+    position: relative;
+  }
+  
+  #myBtn {
+    border: none;
+    background: none;
+    color: var(--color-title);
+    text-transform: uppercase;
+    
+  }
+  
+  #myBtn:hover {
+    color: var(--color-titlehover);
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    position: absolute;
+    right: 25px;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: var(--color-titlehover);
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  @media screen and (max-width: 500px) {
+    .modal-content { 
+        padding: 0;
+    }
+  }

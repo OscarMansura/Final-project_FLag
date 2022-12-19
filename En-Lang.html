@@ -1,0 +1,420 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Ericeira Local - Surf School</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="ericeiralocal.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <script src="https://kit.fontawesome.com/da5f954ac1.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/surfschool.css">
+  <link rel="stylesheet" href="css/lessons.css">
+  <link rel="stylesheet" href="css/certified.css">
+  <link rel="stylesheet" href="css/contacts.css">
+  <link rel="stylesheet" href="css/world.css">
+  <link rel="stylesheet" href="css/meet.css">
+  <link rel="stylesheet" href="css/faqs.css">
+  <link rel="stylesheet" href="css/form.css">
+  <link rel="stylesheet" href="css/overlay.css">
+  <link rel="stylesheet" href="css/modal.css">
+
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body id="en-lang.html">
+
+  <!-- header -->
+  <header class="header" id="up">
+
+    <!-- nav fixed -->
+    <nav class="nav__top">
+
+      <!-- icon to select lang -->
+      <div class="container navbar__language">
+        <div class="selected__language">
+          <button class="navbar__icon">
+            <span class="material-symbols-outlined">
+              language
+            </span>
+            <p class="navbar__lang">Language</p>
+          </button>
+        </div>
+        <ul>
+          <li>
+            <a href="pt-lang.html">Portuguese</a>
+          </li>
+          <li>
+            <a href="en-lang.html">English</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- logo + nav-bar-->
+      <div class="container navbar__main">
+
+        <!-- logo lecters in waves mode -->
+        <div class="navbar__logo">
+          <h1>EriceiraLocal</h1>
+          <h1>EriceiraLocal</h1>
+        </div>
+
+        <!-- links navbar-->
+        <ul id="slots" class="navbar__slots">
+          <li class="navbar__slot"><a href="#about">About Us</a></li>
+          <li class="navbar__slot"><a href="#lessons">Surf Lessons</a></li>
+          <li class="navbar__slot"><a href="#wsr">World Surf Reserve</a></li>
+          <li class="navbar__slot"><a href="#meet">Meet Ericeira</a></li>
+          <li class="navbar__slot"><button id="myBtn">Contacts</button></li>
+        </ul>
+
+        <!-- overlay hidden min 1000px-->
+        <div class="overlay__hide">
+          <!-- overlay -->
+          <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+            <!-- overlay content -->
+            <div class="overlay__content">
+              <!-- links navbar-->
+              <ul class="navbar__slots--overlay">
+                <li class="navbar__slot--overlay"><a onclick="closeNav()" href="#about">About Us</a></li>
+                <li class="navbar__slot--overlay"><a onclick="closeNav()" href="#lessons">Surf Lessons</a></li>
+                <li class="navbar__slot--overlay"><a onclick="closeNav()" href="#wsr">World Surf Reserve</a></li>
+                <li class="navbar__slot--overlay"><a onclick="closeNav()" href="#meet">Meet Ericeira</a></li>
+                <li class="navbar__slot--overlay"><button id="myBtnOverlay">Contacts</button></li>
+              </ul>
+            </div>
+          </div>
+
+          <span class="overlay__icon" onclick="openNav()">&#9776; </span>
+        </div>
+
+        <!-- modal -->
+        <div id="myModal" class="modal">
+
+          <!-- modal content-->
+          <div class="container modal-content">
+            <!-- close icon -->
+            <span class="close">&times;</span>
+            <!-- form -->
+            <div class="container form">
+              <h1 class="title form__title">Contact Us</h1>
+              <form action="/action_page.php">
+                <div class="container flex-container">
+                  <div class="flex-item-left">
+                    <label for="name">Name:</label>
+                  </div>
+                  <div class="flex-item-right">
+                    <input type="text" id="name" name="name" placeholder="Own Name">
+                  </div>
+                  <div class="flex-item-left">
+                    <label for="email">Email:</label>
+                  </div>
+                  <div class="flex-item-right">
+                    <input type="text" id="email" name="email" placeholder="Own Email">
+                  </div>
+                  <div class="flex-item-left">
+                    <label for="assunto">What´s Up:</label>
+                  </div>
+                  <div class="flex-item-right">
+                    <input type="text" id="assunto" name="assunto" placeholder="What do you intend?">
+                  </div>
+                  <div class="flex-item-left">
+                    <label for="date">Date</label>
+                  </div>
+                  <div class="flex-item-right">
+                    <input type="date" id="date" name="date">
+                  </div>
+                  <div class="flex-item-left">
+                    <label for="mensagem">Mensage:</label>
+                  </div>
+                  <div class="flex-item-right">
+                    <textarea id="mensagem" name="mensagem" placeholder="Write here..." rows="10" cols="30"></textarea>
+                  </div>
+                  <div class="flex-item-left">
+                    <input type="submit" value="Send">
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+  <main>
+
+    <!-- resume / video -->
+    <div class="container surfschool">
+      <h2 class="title surfschool" id="about">About Us</h2>
+      <div class="surfschool__flex">
+        <p class="surfschool__resume">Ericeira Local Surf School has been teaching surfers from around the globe since
+          2008. The surf school was established by a local surfer who wanted to share his life long passion for surfing.
+          The main objective of the surf school is not only for you to have an unforgettable experience but to teach you
+          the right way. Our friendly, experienced coaches provide a wealth of knowledge of all aspects of surfing. We are
+          dedicated to share this knowledge of not only board riding technique, but also surf awareness and how to surf
+          safely. No matter what age or size, our accredited surf coaches are trained to be supportive and recognise
+          individual learning levels. Our surf instructors have been trained and accredited by the Portuguese Surf
+          Federation. Short video at right side to see our work, partnership with Nina Movement.</p>
+        <video class="surfschool__video" width="650px" height="550px" controls>
+          <source src="/img/surfvideo.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+
+    <!-- certified school / images-->
+    <div class="container certified">
+      <h2 class="title certified">Certified and Insured School</h2>
+      <div class="certified__images">
+        <img class="certified__img" src="img/turismopt.jpg" alt="Turismo de Portugal">
+        <img class="certified__img" src="img/esc.png" alt="Ericeira Clube de Surf">
+        <img class="certified__img" src="img/fps.jpg" alt="Federecao Portuguesa de Surf">
+        <img class="certified__img" src="img/allianz.png" alt="Seguro">
+      </div>
+    </div>
+
+    <!-- slideshow (surf lessons info / imgs) -->
+    <section class="container">
+      <!--title -->
+      <h2 class="title lessons" id="lessons">Surf Lessons</h2>
+
+      <!-- slideshow -->
+      <div class="lessons__slideshow">
+        <div class="lessons__slides">
+          <img class="lessons__img" src="/img/grouplessons.jpg" alt="surf lesson">
+          <div class="lessons__text">
+            <h3>Group Lesson</h3>
+          </div>
+        </div>
+        <div class="lessons__slides">
+          <img class="lessons__img" src="/img/privatelesson.jpg" alt="private surf lesson">
+          <div class="lessons__text">
+            <h3>Private Lesson</h3>
+          </div>
+        </div>
+        <div class="lessons__slides">
+          <img class="lessons__img" src="/img/kidlesson.jpg" alt="kid surf lesson">
+          <div class="lessons__text">
+            <h3>Kid Lesson</h3>
+          </div>
+        </div>
+
+        <!-- anchor ou arrows in slideshow -->
+        <a class="prev span" onclick="plusSlides(-1)">
+          <span class="material-symbols-outlined">
+            arrow_back_ios
+          </span>
+        </a>
+        <a class="next span" onclick="plusSlides(1)">
+          <span class="material-symbols-outlined">
+            arrow_forward_ios
+          </span>
+        </a>
+      </div>
+
+      <!-- dots / bullets -->
+      <div class="lessons__dots">
+        <span class="lessons__dot" onclick="currentSlide(1)"></span>
+        <span class="lessons__dot" onclick="currentSlide(2)"></span>
+        <span class="lessons__dot" onclick="currentSlide(3)"></span>
+      </div>
+    </section>
+
+    <!-- world surf reserve -->
+    <div class="container world" id="wsr">
+      <h2 class="title world">World Surf Reserve</h2>
+      <article class="world__space">
+        <div class="world__flex">
+          <div class="world__box">
+            <img class="world__img" src="img/pedrabranca.jpg" alt="Pedra Branca">
+          </div>
+          <div class="world__box">
+            <h4 class="world__subtitle">Pedra Branca</h4>
+            <p class="world__text">The first wave that we find right in front of the Camping of Ericeira is the Stone
+              Branca.Located at the southern tip of Empa Beach, and is named because of a rock submerged, with a lighter
+              tone than the others, located in the zone where waves are normally Caught. It is a very fast left of reef
+              bottom that receives ripples from the quadrant OS to the W / NO quadrant. Due to the shallow bench of the
+              reef that is exposed during the empty tide, Is usually surfed from mid-tide to full tide. Regular and
+              dangerous this wave Is characterized by a zone of rapid starts, followed by a pipe to the inside.</p>
+          </div>
+        </div>
+      </article>
+      <article class="world__space">
+        <div class="world__flex world__flex--reverse">
+          <div class="world__box">
+            <h4 class="world__subtitle">Reef</h4>
+            <p class="world__text">Continuing along the beach of Empa, which borders a small cliff, we find 300 Meters
+              to
+              North the twin sister of Pedra Branca, a wave called Reef. this right Is formed from a very flat reef
+              plate
+              that develops on land and becomes more Development in the direction of NO. This is another regular and
+              dangerous wave that has a Very short and quick take-off area, followed by a cylindrical tube that ends
+              exactly on the plate Exposed to the inside surface. It only works with undulations of N to NO, with half
+              tide.</p>
+          </div>
+          <img class="world__img" src="img/reef.jpg" alt="Reef onda">
+        </div>
+      </article>
+      <article class="world__space">
+        <div class="world__flex">
+          <img class="world__img" src="img/ribeiradeilhas.jpg" alt="Ribeira d'Ilhas">
+          <div class="world__box">
+            <h4 class="world__subtitle">Ribeira d'Ilhas</h4>
+            <p class="world__text">Walking 500 meters to North, there is the most media and cosmopolitan wave of all
+              that integrate the reservation. Located in a valley with a sand beach in the center, where a river flows,
+              its configuration Is a natural amphitheater, ideal for holding surfing events. Not for The first national
+              and international championships held in Portugal. Ribeira d`Ihas is a long right of pointbreak - meaning
+              that the waves follow the contour Of the coast - which receives all kinds of ripples and works on all
+              types of tide, being The most consistent wave in the region.</p>
+          </div>
+        </div>
+      </article>
+      <article class="world__space">
+        <div class="world__flex world__flex--reverse">
+          <div class="world__box">
+            <h4 class="world__subtitle">Cave</h4>
+            <p class="world__text">
+              This powerful right just started to be surfed Recently, having gained a lot of notoriety in recent years
+              due to To its spectacular and dangers that surrounds. It is extremely radical, tubular And risky. Leaves
+              on a sudden reef plate that does not connect with Earth, located at very low depths. The suction of water
+              from the Wave to its top is so intense that this part below the line Of water - hence its designation -
+              with the pipe that is formed there to become Progressively hollow, wide and flat as the wave approaches Of
+              its end. The Cave must be exclusively used by very experienced surfers.</p>
+          </div>
+          <img class="world__img" src="img/cave.jpeg" alt="Cave onda">
+        </div>
+      </article>
+      <article class="world__space">
+        <div class="world__flex">
+          <img class="world__img" src="img/crazyleft.jpg" alt="Crazy Left onda">
+          <div class="world__box">
+            <h4 class="world__subtitle">Crazy Left</h4>
+            <p class="world__text">A pointbreak that only breaks well with Undulations of N and NO. Being too exposed to
+              the north wind, it is not a very consistent wave In terms of quality, but when it meets the ideal
+              conditions its walls are fast And tubular, with several sections that provide great speeds. Because it is
+              located in a Of drainage of water from the bay, receives only ripples in perfect conditions above 2
+              meters.</p>
+          </div>
+        </div>
+      </article>
+      <article class="world__space">
+        <div class="world__flex world__flex--reverse">
+          <div class="world__box">
+            <h4 class="world__subtitle">Coxos</h4>
+            <p class="world__text">
+              The spirit of the local surfers ​by which the World Surf Reserve is governed: protection, preservation,
+              sustainability. It is
+              formed by a reef whose bathymetry presents a smooth and uniform slope to the middle of the bay. It has a
+              classic pointbreak configuration, with its line of surf to accompany the contour From coast to coast. It
+              is always a strong wave that presents different sections and Works in varied directions of ripple, and in
+              ideal conditions provides tubes Of several seconds of duration. The dedication of the locals to this wave
+              was the initial spark that triggered All the application process to World Surf Reserve.</p>
+          </div>
+          <img class="world__img" src="img/coxos.jpg" alt="Coxos onda">
+        </div>
+      </article>
+      <article class="world__space--last">
+        <div class="world__flex">
+          <img class="world__img" src="img/saolourenco.jpg" alt="São Lourenço onda">
+          <div class="world__box">
+            <h4 class="world__subtitle">São Lourenço</h4>
+            <p class="world__text">Leaving the Bay of Two Brothers behind, and walking a few minutes northward, We will
+              find the beach of São Lourenço, located in a large bay, with 1.2 km wide. Near its center, about 300
+              meters from the beach, is the wave of St. Lourenço, properly speaking, the last of those that make up the
+              Reserve. These rights depart On a rocky plateau, forming fast waves and with lots of water, due to To its
+              peak being located a considerable distance from the beach. It is usually surfed In mid-tide and needs N /
+              NO ripples, associated with east quadrant wind.</p>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <!-- meet ericeira -->
+    <div class="container meet" id="meet">
+      <h2 class="title meet">Meet Ericeira</h2>
+      <p class="meet__text">Ericeira is so well known in the surf zone due to the waves, the surfers say they are all
+        different. Is known world wide for its surf breaks and good waves,has a long surfing tradition and every keen
+        surfer, whether beginner or pro, will find epic waves here. Also often used for bodyboarding and SUP. The 1st
+        world surfing reserves in Europe and 2nd in the world is also good enough for swimmers with beaches of good
+        quality. Ericeira is a fantastic party location with several nice bars and one discotheque, one is the oldest of
+        Portugal.
+        The proximity to Lisbon makes it very interesting for people, who like to surf perfect waves during the day and
+        want to party at night.</p>
+      <div class="grid__meet">
+        <img class="meet__img" src="img/meetpescadores.jpg" alt="praiadospescadores">
+        <img class="meet__img" src="img/meetfonte.jpg" alt="fontedoalgodio">
+        <img class="meet__img" src="img/meetguardiao.jpg" alt="estatuadoguardiao">
+        <img class="meet__img" src="img/ericeira.jpg" alt="praiadosul">
+        <img class="meet__img" src="img/meetourico.jpg" alt="discotecaourico">
+        <img class="meet__img" src="img/meetnoite.jpg" alt="noitedaericiera">
+      </div>
+    </div>
+
+    <!-- anchor to top -->
+    <a class="top" href="#up">
+      <i class="fa-solid fa-water"></i>
+    </a>
+  </main>
+
+  <footer class="footer">
+
+    <!-- contacts -->
+    <div class="container contacts" id="contact">
+      <ul class="contacts__lists">
+        <li class="contacts__toplist">Courses Surf</li>
+        <li class="contacts__textlist"><a href="en-courses.html">Courses Levels</a></li>
+        <li class="contacts__textlist"><a href="en-faqs.html">Faq</a></li>
+        <li class="contacts__textlist"><a href="en-courses.html">Prices</a></li>
+      </ul>
+      <ul class="contacts__lists">
+        <li class="contacts__toplist">Follow us</li>
+        <li class="contacts__textlist"><a href="#"><i class="fa-brands fa-facebook-f"></i>Facebook</a></li>
+        <li class="contacts__textlist"><a href="#"><i class="fa-brands fa-instagram"></i>Instagram</a></li>
+        <li class="contacts__textlist"><a href="#"><i class="fa-brands fa-square-youtube"></i>Youtube</a></li>
+        <li class="contacts__textlist"><a href="#"><i class="fa-brands fa-twitter"></i>Twitter</a></li>
+      </ul>
+      <ul class="contacts__lists">
+        <li class="contacts__toplist">Contacts</li>
+        <li class="contacts__textlist">Phone: <br><a href="#">+351916831550</a></li>
+        <li class="contacts__textlist">Email: <br><a href="#">ericeira.local@gmail.com</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/slideshow.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>

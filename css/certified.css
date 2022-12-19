@@ -1,0 +1,14 @@
+.certified {
+
+}
+
+.certified__images {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.certified__img {
+   width: 25.5%;
+   height: 25%;
+}

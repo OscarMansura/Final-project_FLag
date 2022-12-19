@@ -1,0 +1,53 @@
+.surfschool {
+
+}
+
+.surfschool__flex {
+    display: flex;
+}
+
+.surfschool__resume {
+    text-align: left;
+    font-size: 1.4em;
+    margin: 0;
+    padding: 50px 10px 10px 0;
+    color: var(--color-text);
+}
+
+.surfschool__video {
+    padding: 0;
+    margin: 0 0 0 25px;
+    padding: 0;
+}
+
+@media only screen and (max-width: 900px) {
+    .surfschool__resume{
+        font-size: 1.2em;
+    }
+}
+@media only screen and (max-width: 768px) {
+        .surfschool__resume{
+            font-size: 1em;
+        }
+}
+
+@media only screen and (max-width: 650px) {
+    video {
+        width: 300px;
+    }
+    
+    .surfschool__video {
+        margin: 0;
+        padding: 10px;
+    }
+
+    .surfschool__flex{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .surfschool__resume{
+        padding: 0;
+    }
+}
+
